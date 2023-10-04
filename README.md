@@ -26,6 +26,5 @@ quasar dev -m electron \\--> Build error
 quasar dev \\ --> Working
 ```
 
-### --> 
-Seems to have to do with modification:
+### Seems to have to do with modification:
 https://github.com/quasarframework/quasar/commit/b4ce74000eecddd28cbaef956181ab5437e478be
