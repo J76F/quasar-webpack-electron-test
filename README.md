@@ -2,32 +2,30 @@
 
 Quasar/Webpack 3.11.1 > 3.11.2 build error Electron
 
-## Install the dependencies
-```bash
-yarn
-# or
+https://stackblitz.com/edit/jf-quasar-webpack-electron3-11-2
+
+## Working
+```
+package.json
+  "@quasar/app-webpack": "3.11.1",
+```
+```
 npm install
+quasar dev -m electron \\ --> Working
+quasar dev \\ --> Working
 ```
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
+## Error Electron build
+```
+package.json
+  "@quasar/app-webpack": "^3.11.2",
+```
+```
+npm install
+quasar dev -m electron \\--> Build error
+quasar dev \\ --> Working
 ```
 
-
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
-
-
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
+### --> 
+Seems to have to do with modification:
+https://github.com/quasarframework/quasar/commit/b4ce74000eecddd28cbaef956181ab5437e478be
