@@ -1,3 +1,6 @@
+# Solved
+@quasar/app-webpack 3.11.3
+
 # Quasar App (quasar-webpack-electron-test)
 
 Quasar/Webpack 3.11.1 > 3.11.2 build error Electron
